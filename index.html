@@ -1,0 +1,522 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="tailwind.css" rel="stylesheet">
+    <title>Wireskip.</title>
+</head>
+<body>
+
+ 
+    
+    
+<!-- Navbar -->
+<section class="relative py-4 !border-b !border-black bg-white">
+    <div class="flex items-center justify-between h-10 px-8 mx-auto max-w-7xl">
+
+        <a href="#_" class="relative z-10 flex items-center w-auto text-xl font-black leading-none text-black  select-none ">Wireskip.</a>
+
+        <nav class="items-center justify-center hidden space-x-5 text-white md:flex lg:space-x-8">
+            <a href="#" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-1 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">Home</span>
+            </a>
+            <a href="#at-a-glance" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-1 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">At a glance</span>
+            </a>
+            <a href="#technology-stack" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-1 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">Routing</span>
+            </a>
+            <a href="#advisors" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-1 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">Advisors</span>
+            </a>
+            <a href="#faq" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-0.5 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">FAQ</span>
+            </a>
+            <a href="#github" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block px-0.5 text-base text-black  transition duration-150 ease hover:text-gray-700">
+                <span class="block">Github</span>
+            </a>
+
+            <a href="#_" class="relative h-6 group">
+                <span class="relative z-10 px-3 py-1 font-bold leading-tight text-black bg-white border-2 border-gray-900 rounded-lg group-hover:bg-black group-hover:text-white ">Quickstart</span>
+                <span class="absolute top-0 right-0 w-full h-8 -mr-1 bg-black rounded-lg"></span>
+            </a>
+
+        </nav>
+
+        <!-- Mobile Button -->
+        <div class="flex items-center justify-center h-full text-black md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+        </div>
+
+    </div>
+</section>
+
+<!-- Hero -->
+<section class="py-16 bg-white md:py-24 ">
+
+    <div class="container relative flex flex-col justify-between h-full max-w-5xl px-10 mx-auto xl:px-0">
+
+        <div class="flex w-full h-full">
+
+            <div class="w-full lg:w-2/3">
+                <div class="flex flex-col items-start justify-center w-full pr-10 mb-12 lg:w-4/5 lg:mb-0">
+                    <div class="relative">
+                        <p class="mb-2 text-base font-bold text-black uppercase"></p>
+                        <h1 class="text-4xl font-extrabold tracking-tight text-black sm:text-5xl xl:text-6xl">
+                            <span class="block xl:inline">Net-neutrality.</span>
+                            <span class="block text-pink-500 xl:inline"></span>
+                        </h1>
+                        <p class="my-8 text-lg text-gray-600 md:text-xl">Wireskip is an open source, decentralized VPN protocol designed with the goal of providing unrestricted access to the internet from anywhere.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            
+            <div class="w-full lg:w-1/3">
+                <p class="my-2 pl-8 h-26 text-2xl border-l-4 border-gray-200 leading-relaxed text-black tracking-tight">
+                It's pretty
+                <b class="text-gray-700">fast</b>, looks like
+                <b class="text-gray-700">regular HTTP/2</b> traffic, has
+                <b class="text-gray-700">multi-protocol</b> support,
+                <b class="text-gray-700">multiplexed</b> connections,
+                <b class="text-gray-700">onion encryption &amp; routing</b> and increased
+                <b class="text-gray-700">privacy</b>.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Code window -->
+
+    <section class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <div class="relative h-full ml-0 mr-0 sm:mr-10">
+            <span class="absolute top-0 left-0 w-full h-full mt-4 ml-3 bg-black  opacity-40 rounded-lg"></span>
+            <div class="mt-6 flex flex-col relative w-full my-auto shadow-lg text-black bg-black text-sm font-mono subpixel-antialiased rounded-lg">
+                <div class="flex space-x-2 m-6">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-200"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-300"></div>
+                </div>
+                <div class="overflow-hidden bg-white border border-black ">
+                    <div class="whitespace-nowrap overflow-x-auto pl-6 pb-6 text-black"><p><br></p>
+                        <p><span class="text-black select-none">$</span> curl ifconfig.co/country</p>
+                        <p><span class="select-none pl-4"></span><span class="text-gray-500">United States</span></p><br>
+                        <p><span class="text-black select-none">$</span> wireskip socks start</p>
+                        <p><span class="text-black select-none">$</span> wireskip exec curl ifconfig.co/country</p>
+                        <p><span class="select-none pl-4"></span><span class="text-gray-500">Netherlands</span></p><br>
+                        <p><span class="text-black select-none">$</span> wireskip reload</p>
+                        <p><span class="text-black select-none">$</span> wireskip exec curl ifconfig.co/country</p>
+                        <p><span class="select-none pl-4"></span><span class="text-gray-500">Switzerland</span></p><br>
+                        <p><span class="text-black select-none">$</span> wireskip config broker.circuit.whitelist $(__wireskip_relays | grep germany)</p>
+                        <p><span class="text-black select-none">$</span> wireskip exec curl ifconfig.co/country</p>
+                        <p><span class="select-none pl-4"></span><span class="text-gray-500">Germany</span></p><br>
+                        <p class="text-green-600"># tunnel all tcp/udp traffic on the system</p>
+                        <p><span class="text-black select-none">$</span> wireskip tun start</p>
+                        <p><span class="text-black select-none">$</span> firefox</p>
+                        <br>
+
+                        <p class="text-green-600"># tunnel specific traffic (manually or wrapper scripts)</p>
+                        <p><span class="text-black select-none">$</span> curl --proxy socks5h://$(wireskip config forwarders.socks.address) URL</p>
+                        <p><span class="text-black select-none">$</span> wireskip exec git clone URL</p>
+                        <p><span class="text-black select-none">$</span> wireskip exec chromium-browser [URL]</p>
+                        <br>
+                        <p class="text-green-600"># tunnel network connections from arbitrary programs</p>
+                        <p><span class="text-black select-none">$</span> wireskip intercept ssh USER@HOST</p>
+                        <br>
+                        <p class="text-green-600"># define the circuit that fits your needs</p>
+                        <p><span class="text-black select-none">$</span> wireskip config broker.circuit.whitelist "wireskip://relay.example.com:13490"</p>
+                        <p><span class="text-black select-none">$</span> wireskip config broker.circuit.hops 1</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>                         
+                                
+                                
+        <br><br><br><br>
+    </section>
+    
+    
+    
+    
+    
+<!-- Black background -->
+<section class="bg-black -mt-96 h-96">
+
+</section>
+
+    
+
+<!-- At a Glance -->
+<a name="at-a-glance"></a>
+<section class="relative py-24 max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+ <div class="max-w-2xl mx-auto text-center lg:max-w-4xl">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">At a glance</h2>
+    <p class="mt-4 text-gray-500">Wireskip seeks to solve the problems of modern consumer VPNs and onion-routing networks.</p>
+ </div>
+ <dl class="mt-16 max-w-2xl mx-auto grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Encrypted with multiple layers</dt>
+       <dd class="mt-2 text-sm text-gray-500">Traffic is encapsulated in layers of encryption and routed through a series of relays, each knowing only the required information to perform its job.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Single or multiple hops</dt>
+       <dd class="mt-2 text-sm text-gray-500">Define the amount of hops you prefer in a circuit, less for lower latency, more for increased privacy.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Customizable circuits</dt>
+       <dd class="mt-2 text-sm text-gray-500">By default relays are selected randomly based on the number of hops configured, but you can choose specific relays or a series of relays.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Tunnel all system traffic</dt>
+       <dd class="mt-2 text-sm text-gray-500">All traffic on the system (both TCP and UDP) can be tunneled through the connection broker using the TUN device, just like a regular VPN client.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Or tunnel only specific apps</dt>
+       <dd class="mt-2 text-sm text-gray-500">Any application that supports the SOCKSv5 protocol can be configured to route its traffic through the connection broker. Have an app that doesn't support SOCKS? Intercept its socket connections.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Indistinguishable traffic</dt>
+       <dd class="mt-2 text-sm text-gray-500">Connections are encrypted, multiplexed and encapsulated into regular TLS HTTP/2 traffic. Regular connections to example.com and relaying traffic via example.com look pretty much identical.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">No user accounts needed</dt>
+       <dd class="mt-2 text-sm text-gray-500">Access to Wireskip networks is performed with accesskeys, used to cryptographically and independently generate tokens for relays to authorize service.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">A powerful API</dt>
+       <dd class="mt-2 text-sm text-gray-500">The client controller provides a REST API used by the CLI, but opens the door for GUI's, web frontends, browser extensions, router and custom integrations.</dd>
+    </div>
+    <div class="border-t border-gray-200 pt-4">
+       <dt class="font-medium text-gray-900">Open Source</dt>
+       <dd class="mt-2 text-sm text-gray-500">Source code for the client and the relay is available on GitHub, and published under the MIT license. You can build from source, browse the code, and contribute.</dd>
+    </div>
+ </dl>
+</section>
+    
+    
+    
+    
+    
+    
+    
+ 
+<!-- Technology Stack -->
+<a name="routing"></a>
+<section class="relative w-full py-12 overflow-hidden bg-black md:py-20 xl:pt-32 xl:pb-40">
+
+    <div class="max-w-2xl mx-auto text-center lg:max-w-4xl">
+        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Routing</h2>
+    </div>
+    
+    
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+
+        <div class="flex w-full h-full">
+
+            <div class="w-full lg:w-3/3">
+                        <img src="traffic_diagram.png">
+
+            </div>        
+            
+        </div>
+    </div>
+
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+
+        <div class="flex w-full h-full">
+
+            <div class="w-full lg:w-3/3">
+                        <img src="traffic_diagram_options.png">
+
+            </div>        
+            
+        </div>
+    </div>
+
+</section>
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+<!-- Advisors -->
+<a name="advisors"></a>
+<section class="relative w-full bg-white">
+    <div class="absolute inset-0 w-full h-full bg-white">
+
+    </div>
+    <div class="relative w-full px-8 pt-16 pb-16 ml-auto mr-auto bg-top bg-cover sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-24 lg:pb-32">
+        <div class="max-w-xl mb-10 ml-auto mr-auto bg-top bg-cover md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+            <div class="max-w-2xl mb-6 ml-auto mr-auto font-sans tracking-tight text-white bg-top bg-cover sm:text-4xl md:mx-auto">
+        <h2 class="mb-1 text-3xl font-extrabold leading-tight text-black">Advisors</h2>
+            </div>
+        </div>
+        <div class="grid gap-12 row-gap-8 ml-auto mr-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-text-top mx-10">
+                    <p class="text-lg font-bold text-black">Ladar Levison</p>
+                    <p class="text-sm text-gray-900">Privacy and Technology Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Founder, Lavabit</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Arturo Filasto</p>
+                    <p class="text-sm text-gray-900">Internet Measurement and Traffic Censorship Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Project Lead at OpenObservatory (OONI)</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Micah Anderson</p>
+                    <p class="text-sm text-gray-900">Privacy and Technology Advisor</p>
+                    <p class="text-sm text-gray-900"><i>RiseUp Founder, Calyx Board Member</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Derek Zimmer</p>
+                    <p class="text-sm text-gray-900">Security and Privacy Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Executive Director OSTIF.org</i><br><br></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">eyedeekay</p>
+                    <p class="text-sm text-gray-900">Routing Layer Advisor</p>
+                    <p class="text-sm text-gray-900"><i>i2p Android Developer and Maintainer</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Susan Sons</p>
+                    <p class="text-sm text-gray-900">Research and Security Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Chief Security Analyst, Indiana University Bloomington</i><br><br></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Gael Duval</p>
+                    <p class="text-sm text-gray-900">Integrations Advisor</p>
+                    <p class="text-sm text-gray-900"><i>President and Founder of /e/, Murena, and Mandrake Linux</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Perry Kniest</p>
+                    <p class="text-sm text-gray-900">Consumer VPN and Infrastructure Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Founder vpn.asia and HostingKing</i></p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <!--img src="" class="object-cover w-20 h-20 mr-4 rounded-full shadow"-->
+                <div class="relative align-top mx-10">
+                    <p class="text-lg font-bold text-black">Joost Hoogendoorn</p>
+                    <p class="text-sm text-gray-900">Consumer VPN and Infrastructure Advisor</p>
+                    <p class="text-sm text-gray-900"><i>Founder WifiMask VPN</i></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
+
+<!-- Quote -->
+<section class="relative py-20 overflow-hidden bg-black cursor-pointer sm:py-24 md:py-32">
+    <div class="relative max-w-5xl px-16 mx-auto xl:px-0">
+        <svg class="absolute top-0 left-0 hidden w-32 h-32 -mt-3 -ml-16 text-white opacity-50 xl:block" stroke="currentColor" fill="none" viewBox="0 0 144 144"><path stroke-width="2" d="M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z"></path></svg>
+        <div class="relative xl:pl-32 lg:flex lg:items-center">
+            <div class="relative">
+                <blockquote class="relative">
+                    <div class="font-serif text-xl font-medium leading-9 text-gray-100 md:text-2xl">
+                        <p>I have worked on decentralized and privacy focused tech that supports internet rights, freedom, and personal data protection for years, and if Wireskip is going to try and solve the net neutrality issue, I want to help support it.</p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0"><!--img class="object-cover w-12 h-12 mr-4 rounded-full" src="" alt=""--> </div>
+                            <div class="ml-4 lg:ml-0">
+                                <div class="text-base font-medium leading-6 text-gray-400">Gael Duval, President of Founder of /e/, Murena, and Mandrake Linux</div>
+                            </div>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Try Wireskip -->
+<section class="py-24 bg-white">
+    <div class="max-w-6xl px-10 mx-auto xl:max-w-7xl">
+        <div class="flex flex-col items-start justify-between lg:flex-row">
+            <div class="relative">
+                <h2 class="text-4xl font-extrabold text-black xl:text-5xl">Ready to try Wireskip?</h2>
+                <p class="mt-2 text-xl text-gray-600">Choose from any free or paid VPN provider using Wireskip, or try the free public Libre network.</p>
+            </div>
+            <a href="#_" class="flex items-center justify-center px-10 py-5 mt-10 text-2xl font-bold leading-tight text-black bg-white border-4 border-gray-900 rounded-lg group-hover:bg-black hover:bg-black group-hover:text-white hover:text-white lg:mt-0">Quickstart</a>
+        </div>
+    </div>
+</section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<!--FAQ -->
+<a name="faq"></a>
+<section class="py-24 bg-black">
+    <div class="px-8 mx-auto max-w-7xl lg:px-16">
+        <h2 class="mb-4 text-xl font-bold md:text-3xl text-white">Frequently Asked Questions</h2>
+        <div class="grid grid-cols-1 gap-0 text-gray-300 md:grid-cols-2 md:gap-16">
+            <div>
+                <h5 class="mt-10 mb-3 font-semibold text-white">What is Wireskip?</h5>
+                <p>Wireskip is a consumer VPN for your device. It's different in its scalability <i>(for VPN providers)</i> and indistinguishability and censorship resistance <i>(for consumers)</i>.</p>
+
+                <h5 class="mt-10 mb-3 font-semibold text-white">Why make another protocol?</h5>
+                <p>After thorough research, nothing could be found that solves the problems Wireskip is built to solve. While OpenVPN, Wireguard, and Tor all have their benefits, none of them natively allow for indistinguishable traffic or the type of scalability and economic sustinability Wireskip is designed to provide.</p>
+
+                <h5 class="mt-10 mb-3 font-semibold text-white">Have can I trust the code?</h5>
+                <p>
+                    Wireskip is developed as open source software free to inspect, audit, and modify as desired.
+                </p>
+
+            </div>
+            <div>
+
+                <h5 class="mt-10 mb-3 font-semibold text-white">Has Wireskip been audited?</h5>
+                <p>Wireskip is in discussion with OSTIF for an eventual audit.</p>
+
+                <h5 class="mt-10 mb-3 font-semibold text-white">Is it legal for me to use Wireskip?</h5>
+                <p>
+                    A popular question on the internet is “Is Tor or [some] VPN legal in my country?”. We sponsor continued independent research into this topic and you can find the latest legal information <a href="https://equalaccess.net/legal/compliance/">here</a> for your specific situation.
+                </p>
+
+                <h5 class="mt-10 mb-3 font-semibold text-white">Where does the idea for Wireskip come from?</h5>
+                <p>Wireskip is based off of Wireleap, a partially closed source version of the same concept which is no longer maintained or developed.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Section 10 -->
+<section class="text-gray-700 bg-white body-font">
+    <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+        <a href="#_" class="text-xl font-black leading-none text-gray-900 select-none logo">Wireskip.</a>
+        <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">Wireskip. <a href="https://wireskip.com/legal/privacy/">Privacy policy</a>
+        </p>
+        <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+
+        </span>
+    </div>
+</section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+  <!-- ... -->
